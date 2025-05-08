@@ -1,1 +1,37 @@
-<h1> hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Werewolf Online Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Werewolf Online Game</h1>
+
+    <!-- Create Game Section -->
+    <div id="create-game-section">
+      <button id="create-game-btn">Create Game</button>
+    </div>
+
+    <!-- Lobby Section -->
+    <div id="lobby-section" class="hidden">
+      <h2>Game Lobby</h2>
+      <div id="players-list"></div>
+      <input type="text" id="player-name" placeholder="Enter player name" />
+      <button id="join-game-btn">Join Game</button>
+      <button id="start-game-btn">Start Game</button>
+    </div>
+
+    <!-- Game Section -->
+    <div id="game-section" class="hidden">
+      <h2>Night Phase</h2>
+      <p id="game-info"></p>
+      <div id="vote-section"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
